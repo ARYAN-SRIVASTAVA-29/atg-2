@@ -62,8 +62,19 @@ if (error) return <div>Error: {error.message}</div>;
         </div>
 
         <div className="list">
-          <List/>
-          <List/>
+        {data.map(user => (
+              <List 
+                key={user.id}
+                avatar={user.avatar}
+                firstName={user.profile.firstName}
+                lastName={user.profile.lastName}
+                jobTitle={user.jobTitle}
+                username={user.profile.username}
+                bio={user.Bio}
+                email={user.profile.email}
+              />
+            ))}
+          
         </div>
 
   </div>
@@ -71,3 +82,5 @@ if (error) return <div>Error: {error.message}</div>;
     </>
   );
 }
+
+
