@@ -1,0 +1,26 @@
+/* *{
+  background-color: black;
+  color: white;
+} */
+
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.users{
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-family: 'Poppins';
+}
